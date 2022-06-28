@@ -1,0 +1,72 @@
+@import "../variables";
+
+.clothes-block {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+  margin-bottom: 65px;
+  &-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  &__image {
+    width: inherit;
+    max-height: 260px;
+  }
+
+  &__title {
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 1%;
+    margin-bottom: 20px;
+  }
+
+  &__selector {
+    display: flex;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    flex-direction: column;
+    padding: 6px;
+
+    ul {
+      padding: 5px 5px;
+      display: flex;
+      flex: 1;
+
+      li {
+        padding: 8px;
+        flex: 1;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 14px;
+        @include noselect();
+        transition: 0.4s all;
+        text-align: center;
+        &.active {
+          background: #ffffff;
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.04);
+          border-radius: 5px;
+          cursor: auto;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  &__price {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: 0.015em;
+  }
+}
