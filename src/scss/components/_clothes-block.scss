@@ -14,6 +14,9 @@
   &__image {
     width: inherit;
     max-height: 260px;
+    @media (max-width: 400px) {
+      width: 260px;
+    }
   }
 
   &__title {
