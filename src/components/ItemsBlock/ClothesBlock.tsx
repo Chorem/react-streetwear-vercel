@@ -47,7 +47,7 @@ export const ClothesBlock: React.FC<ClothesBlockProps> = ({ id, title, price, ty
               alt="t-shirt"
             />
           </div>
-          <h4 className="clothes-block__title">{title}</h4>
+          <h4 className="clothes-block__title">no title</h4>
         </Link>
 
         <div className="clothes-block__selector">
