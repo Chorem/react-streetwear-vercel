@@ -37,7 +37,7 @@ const ItemInfo: React.FC = () => {
   }
 
   return (
-    <div className="container item-wrapper">
+    <div className="container item-wrapper it-w">
       <img className="items-image" src={item.imageUrl} alt={item.imageUrl} />
       <div className="items-info">
         <h2>{item.title}</h2>
